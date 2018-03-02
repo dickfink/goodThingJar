@@ -1,0 +1,21 @@
+<% include partials/header %>
+  <% include partials/navbar %>
+<h3><i>goodThingJar</i></h1>
+   <% var post = posts[Math.floor(Math.random()*posts.length)]; %>
+      <div class="text-center good-thing all">
+        <div class="row">
+          <div class="col">
+            <h1>
+              <%= post.memory %>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <a href="/goodthings/<%= post.id %>">
+              <%= post.date.toDateString() %>
+            </a>
+          </div>
+        </div>
+      </div>
+<% include partials/footer %>

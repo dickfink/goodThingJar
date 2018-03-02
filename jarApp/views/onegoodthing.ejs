@@ -1,0 +1,25 @@
+<% include partials/header %>
+  <% include partials/navbar %>
+    <h3><i>one good thing</i></h1>
+      <% var post = posts %>
+        <div class="text-center good-thing all">
+          <div class="row">
+            <div class="col">
+              <h1>
+                <%= post.memory %>
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-right">
+              <%= post.date.toDateString() %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="/<%= post._id %>/edit">            
+              <button class="btn btn-sm btn-warning" type="submit">EDIT</button>
+            </a>
+            </div>
+          </div>
+          <% include partials/footer %>

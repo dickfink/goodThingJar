@@ -1,0 +1,17 @@
+<% include partials/header %>
+  <% include partials/navbar %>
+
+    <div class="form-memory">
+      <h1>
+        make a new memory
+      </h1>
+      <form action="../goodthings" method="POST">
+        <div class="form-group">
+          <input class="form-control form-control-lg" type="text" name="memory" placeholder="this good thing happened...">
+          <button class="btn btn-lg btn-primary float-right" type="submit">Remember</button>
+        </div>
+      </form>
+    </div>
+
+
+    <% include partials/footer %>

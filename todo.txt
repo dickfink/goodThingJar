@@ -1,0 +1,7 @@
+http://node-dickfink202963.codeanyapp.com:3000/
+
+-- set up database with different users
+  -- move "user" to VAR somewhere?
+-- set up authentication
+    http://mherman.org/blog/2013/11/11/user-authentication-with-passport-dot-js/
+    http://danielstudds.com/setting-up-passport-js-secure-spa-part-1/

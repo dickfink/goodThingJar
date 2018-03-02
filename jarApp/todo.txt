@@ -1,0 +1,5 @@
+http://node-dickfink202963.codeanyapp.com:3000/
+
+-- set up database with one user + different posts
+-- set up database with different users
+-- set up authentication

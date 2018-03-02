@@ -1,0 +1,23 @@
+<% include partials/header %>
+  <% include partials/navbar %>
+<h3><i>all the goodThings</i></h3>
+    <% posts.forEach(function(post){ %>
+      <div class="text-center good-thing all">
+        <div class="row">
+          <div class="col">
+            <h1>
+              <%= post.memory %>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <a href="<%= post.id %>">
+              <%= post.date.toDateString() %>
+            </a>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+
+<% include partials/footer %>
